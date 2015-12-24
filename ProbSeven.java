@@ -19,7 +19,7 @@ public class ProbSeven{
 		else if(num%2==0)
 			return false;
 		else{
-			for(int i = 3; i<(Math.sqrt(num));i++){
+			for(int i = 3; i<=(Math.sqrt(num));i++){
 				if(num%i==0)
 					return false;
 			
