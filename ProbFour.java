@@ -1,7 +1,7 @@
 import java.lang.StringBuilder;
 public class ProbFour{
 	public static void main(String []args){
-		System.out.println(longestThreePalin());
+		System.out.println(isPalin("32123"));
 	}
 	public static boolean isPalin(String str){
 		if(str.length()%2==0){
@@ -11,7 +11,7 @@ public class ProbFour{
 		}
 		else{
 			StringBuilder sb = new StringBuilder(str);
-			if(sb.substring(0,sb.length()/2).equals(sb.reverse().substring(0,sb.length()/2+1)))
+			if(sb.substring(0,sb.length()/2).equals(sb.reverse().substring(0,sb.length()/2)))
 				return true;
 		}
 		return false;
